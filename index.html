@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form gru pr</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <div id="form">
+    <form name="myform" onsubmit="return valid()">
+      <header id="cap">Registretion Form</header>
+      <br>
+
+      <label> Enter Username:</label>
+      <div id="t"><input type="text" name="name" id="name"></div>
+
+      <br><br>
+
+      <label>Enter Password:</label>
+      <div id="t"><input type="password" name="password" id="password"> </div>
+
+      <br><br>
+
+      <label for="add">Address:</label>
+      <div id="t">
+        <textarea name="add" id="address" cols="30" rows="3" name="address"></textarea>
+      </div>
+      <br><br><br><br>
+
+      <label for="int">Fields Of Intrest:</label>
+      <div id="t">
+        <input type="checkbox" value="Entertanment" name="hobi">Entertanment
+        <input type="checkbox" value="Sports" name="hobi">Sports
+        <input type="checkbox" value="News" name="hobi">News
+      </div>
+
+      <br><br>
+
+      <label for="gen" id="gender">Gender</label>
+      <div id="t">
+        <input type="radio" value="Male" name="gen" id="male">Male
+        <input type="radio" value="Female" name="gen" id="female">Female
+      </div>
+
+      <br><br>
+
+      <label for="lan" id="lan">Select Language</label>
+      <div id="t">
+        <select name="languag" id="languag">
+          <option value="english">english</option>
+          <option value="marathi">Marathi</option>
+          <option value="hindi">hindi</option>
+          <option value="gujrati">gujrati</option>
+        </select>
+      </div>
+
+      <br><br>
+
+      <label for="contry" id="con">Select Contry</label>
+      <div id="t">
+        <select name="contry" id="contry">
+          <option value="india">india</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select>
+      </div>
+
+      <br><br>
+
+      <label for="file" id="f_p"> Uplode File Photo </label>
+      <div id="t">
+        <input type="file" name="filename" id="filename" accept="image">
+      </div>
+
+      <br><br>
+
+      <div id="button">
+        <input type="submit" value="submit" id="submit">
+        <button id="cancel">cancel</button>
+      </div>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
