@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f2d42;
+}
+
+#form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffab32;
+    width: 500px;
+    padding: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    box-shadow: 12px 12px 20px black;
+}
+
+header {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    position: absolute;
+    left: 10%;
+}
+
+#t {
+    position: absolute;
+    left: 40%;
+}
+
+#name,
+#password,
+#languag,
+#address,
+#contry {
+    width: 240px;
+}
+
+
+#button {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#submit,
+#cancel {
+    padding: 5px 30px;
+    border-radius: 20% ;
+    text-transform: capitalize;
+    background-color: #272828b5;
+    border: 1px solid black;
+    color: white;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #form {
+        width: 300px;
+        padding: 25px;
+    }
+
+    header {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #name,
+    #password,
+    #languag,
+    #contry,
+    #address {
+        width: 150px;
+        font-size: 10px;
+    }
+
+    label {
+        font-size: 10px;
+
+    }
+
+    #t,
+    #filename {
+        font-size: 10px;
+    }
+
+    #button {
+        margin-top: 7px;
+    }
+
+    #submit,
+    #cancel {
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+}
